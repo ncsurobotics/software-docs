@@ -1,2 +1,0 @@
-# AquaPack Robotics Software Documentation
-

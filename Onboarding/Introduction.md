@@ -10,4 +10,8 @@
 
 
 ## How can I get started?
-- Depending on your computer/operating system you can download Rust and learn how to set up and access the codebase. Please click on the "Rust Installation" folder and follow the instructions for your computer.
+- Depending on your computer/operating system you can download Rust and learn how to set up and access the codebase. Please click on the "___Rust.md" file for your computer type or click these:
+
+- [MacOS Instructions](MacOSRust.md#macos-instructions)
+- [Windows Instructions](WindowsRust.md#windows-instructions)
+- [Linux Instructions](LinuxRust.md#linux-instructions)

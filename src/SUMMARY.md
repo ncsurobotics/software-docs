@@ -63,4 +63,3 @@
 - [Technical Page Template](contributing/technical-page-template.md)
 - [Team-Confirmation Register](reference/team-confirmation-register.md)
 
-test

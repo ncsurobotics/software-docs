@@ -1,17 +1,19 @@
-## What does the aquapack software team do?
-- The aquapack software team handles the decision making of the robot through the control board and Jetson. 
-- The competition aquapack competes in is RoboSub and the challenges for this competition are all automated, as such there are no inputs sent to the robot during its run. Writing functional code for the missions is very important.
-- In Summary The code makes the robot do things.
+# Software Team Orientation
 
-## What languages and tools are used?:
-- Our robot uses Rust and OpenCV
-- YOLO (You only look once) is used for object detection
-- ROS2 (Robot Operating System) Docker setup for the ZED Camera
+The AquaPack software team helps SeaWolf IX make decisions during an autonomous RoboSub run. RoboSub is an underwater robotics competition: after the run begins, the vehicle must perceive its surroundings, decide what to do next, and carry out mission tasks without a person steering it in real time.
 
+That is why software matters so much. A camera detection is only useful if it can become a safe, well-timed movement. A mission idea is only useful if the robot can execute it reliably with the real vehicle, sensors, and electronics.
 
-## How can I get started?
-- Depending on your computer/operating system you can download Rust and learn how to set up and access the codebase. Please click on the "___Rust.md" file for your computer type or click these:
+In practical terms, the code makes the robot do things. It connects the Jetson computer, the control board, sensors, cameras, and mission logic into one system.
 
-- [MacOS Instructions](MacOSRust.md#macos-instructions)
-- [Windows Instructions](WindowsRust.md#windows-instructions)
-- [Linux Instructions](LinuxRust.md#linux-instructions)
+## Tools you will encounter
+
+SW9S is primarily written in Rust. Rust is the language used for the robot application because it can express complex, concurrent systems while making many memory and ownership mistakes harder to write.
+
+The project also uses OpenCV for image processing, YOLO-style models for some object-detection experiments, ROS 2 and Docker around the ZED camera environment, and lower-level serial protocols for the electronics boards. You do not need to understand all of these on day one. The handbook introduces them in the order that makes their role on the robot clear.
+
+## How to begin
+
+Start with [Welcome to SW9S](../title-page.md), then read [SW9S in One Page](../architecture/sw9s-in-one-page.md). If you are setting up a development computer, use the [Development Environment](installation.md) page; the team's existing recommended Windows path is [Windows with WSL and VS Code](installation/windows_rust.md).
+
+When you read technical pages, keep the source code open beside the book. The goal is not to memorize every module. It is to build a mental map: what information enters the system, where SW9S makes a decision, what hardware receives the result, and which details still need confirmation from the team.
